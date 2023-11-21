@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Mahasiswa</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script language="JavaScript">
+        <!--
+        function kirimData() {
+            var nim = document.fform.nim.value;
+            var nama = document.fform.nama.value;
+
+            alert("NIM: " + nim + "\nNama: " + nama);
+        }
+
+        function ulangForm() {
+            document.fform.reset();
+        }
+        //-->
+    </script>
+
+    <form name="fform">
+        <h1>Form Mahasiswa</h1>
+        <label for="nim">NIM:</label>
+        <input type="text" name="nim" required>
+
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label for="jenisKelamin">Jenis Kelamin:</label>
+        <select name="jenisKelamin">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="agama">Agama:</label>
+        <input type="text" name="agama" required>
+
+        <label for="status">Status:</label>
+        <select name="status">
+            <option value="Aktif">Aktif</option>
+            <option value="Nonaktif">Nonaktif</option>
+        </select>
+
+        <label for="jurusan">Jurusan:</label>
+        <input type="text" name="jurusan" required>
+
+        <label for="komentar">Komentar:</label>
+        <textarea name="komentar" rows="3" cols="30"></textarea>
+
+        <br>
+
+        <input type="button" value="Kirim" onclick="kirimData()">
+        <input type="button" value="Ulang" onclick="ulangForm()">
+    </form>
+</body>
+</html>

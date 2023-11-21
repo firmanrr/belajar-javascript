@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+    <TITLE>Operasi Bilangan</TITLE>
+</HEAD>
+<BODY>
+    <P>
+        <SCRIPT language="JavaScript">
+            <!--
+            function hitung(operasi) {
+                var bil1 = parseFloat(document.fform.bilangan1.value);
+                if (isNaN(bil1)) bil1 = 0.0;
+
+                var bil2 = parseFloat(document.fform.bilangan2.value);
+                if (isNaN(bil2)) bil2 = 0.0;
+
+                var hasil = 0;
+
+                switch (operasi) {
+                    case 'jumlah':
+                        hasil = bil1 + bil2;
+                        break;
+                    case 'kurang':
+                        hasil = bil1 - bil2;
+                        break;
+                    case 'kali':
+                        hasil = bil1 * bil2;
+                        break;
+                    case 'bagi':
+                        hasil = bil1 / bil2;
+                        break;
+                    default:
+                        alert("Operasi tidak valid");
+                        return;
+                }
+
+                alert("Hasil " + operasi + " = " + hasil);
+            }
+            //-->
+        </SCRIPT>
+    </P>
+    <FORM NAME="fform">
+        <H1><BR>Operasi Bilangan</H1>
+        <PRE>
+            Bilangan Pertama :<input type="text" size="11" name="bilangan1">
+            Bilangan Kedua :<input type="text" size="11" name="bilangan2">
+        </PRE>
+        <P>
+            <INPUT TYPE="button" value="Jumlahkan" onclick="hitung('jumlah')">
+            <INPUT TYPE="button" value="Kurangkan" onclick="hitung('kurang')">
+            <INPUT TYPE="button" value="Kalikan" onclick="hitung('kali')">
+            <INPUT TYPE="button" value="Bagikan" onclick="hitung('bagi')">
+            <INPUT TYPE="reset" value="Ulang">
+        </FORM>
+    </BODY>
+</HTML>
